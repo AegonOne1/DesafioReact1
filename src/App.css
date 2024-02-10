@@ -1,0 +1,54 @@
+.templateGrid {
+    color: #ffffff;
+    display: grid;
+    width: 100vw;
+    height: 100vh;
+    grid-template:
+        'head head' 4rem
+        'main main' 1fr
+        'foot foot' 5rem;
+}
+
+.layout-header {
+    background-color: #0D1321;
+    grid-area: head;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+
+.layout-main {
+    background-color: #0D1321;
+    display: flex;
+    justify-content: center;
+    grid-area: main;
+    padding: 10px;
+}
+
+.layout-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    grid-gap: 10px;
+}
+
+.cardd {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    border: none;
+}
+
+.layout-footer {
+    background-color: #DE9E36;
+    grid-area: foot;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}

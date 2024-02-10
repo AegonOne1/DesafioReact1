@@ -1,8 +1,9 @@
+
 const  Header = (props) => {
     return (
-        <>
-        <h1>{props.NombredelTitulo} </h1>
-        </>
+        <div className="layout-header">
+            <h1 >{props.NombredelTitulo} </h1>
+        </div>
     )  
 }
 
